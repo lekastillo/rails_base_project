@@ -22,11 +22,16 @@
     <%= stylesheet_link_tag "skin-master.css" %>
     <%= stylesheet_link_tag "vendors.bundle.css" %>
 
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%#= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <%#= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://getbootstrap.com/docs/4.0/examples/jumbotron/jumbotron.css" rel="stylesheet">    
+
+   <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    ->
 
 </head>
 
@@ -2213,7 +2218,7 @@
                         <div>
                             <a href="#" data-toggle="dropdown" title="drlantern@gotbootstrap.com"
                                 class="header-icon d-flex align-items-center justify-content-center ml-2">
-                                <img src="img/demo/avatars/avatar-admin.png" class="profile-image rounded-circle"
+                                <!--<img src="img/demo/avatars/avatar-admin.png" class="profile-image rounded-circle"
                                     alt="Dr. Codex Lantern">
                                 <!-- you can also add username next to the avatar with the codes below:
 									<span class="ml-1 mr-1 text-truncate text-truncate-header hidden-xs-down">Me</span>
